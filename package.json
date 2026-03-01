@@ -1,0 +1,56 @@
+{
+  "name": "agent-passport-acp",
+  "version": "1.0.0",
+  "description": "ACP (Agent Communication Protocol) transport adapter for the Agent Passport System. Bridges passport-signed Agora communication with the ACP REST standard.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "agent-passport-acp": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/src/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test tests/server.test.ts",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "agent-passport-system": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.35",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "acp",
+    "agent-communication-protocol",
+    "agent-passport",
+    "a2a",
+    "agent-to-agent",
+    "multi-agent",
+    "interoperability",
+    "ed25519",
+    "identity",
+    "governance",
+    "rest",
+    "agora"
+  ],
+  "author": "Tymofii Pidlisnyi <tima@aeoess.com> (https://aeoess.com)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeoess/agent-passport-acp.git"
+  },
+  "homepage": "https://aeoess.com/agora.html",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/src/**/*",
+    "README.md",
+    "LICENSE"
+  ]
+}
