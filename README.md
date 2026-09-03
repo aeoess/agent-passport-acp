@@ -1,3 +1,5 @@
+> Archived 2026-09-02. ACP transport adapter; ACP was folded into A2A and the adapter is superseded.
+
 # Agent Passport ACP
 
 **ACP transport adapter for the Agent Passport System.**
